@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/local.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+           }
+        
+           
+        input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        input[type=submit], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <strong><h2>Administrator</h2></strong>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li><a href="forms.html"><i class="fa fa-list-ol"></i> Forms</a></li>
+                    <li><a href="records.php"><i class="fa fa-list-ul"></i>Contacts</a></li>
+                    <li><a href="product_records.php"><i class="fa fa-list-ul"></i>Products</a></li>
+                    <li><a href="register_records.php"><i class="fa fa-list-ul"></i>Registration</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                        <a href="logout.php"><i class="fa fa-power-off"></i>Log Out</a>
+                </ul>
+            </div>
+        </nav>
+
+                <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-6">
+                                        <strong><h3>Registration Form</h3></strong>
+                                        <hr>
+                                    <form action="sign.php" method="POST">
+                                        <strong></strong><h4><label>Name:</label></h4></strong>
+                                        <input type="text" name="name"><br><br>
+                                        <strong><h4><label>Phone Number:</label></h4></strong>
+                                        <input type="text" name="pnumber"><br><br>
+                                        <strong><h4><label>id number:</label></h4></strong>
+                                        <input type="text" name="idno"><br><br>
+                                        <strong><h4><label>Duration:</label></h4></strong>
+                                        <input type="text" name="time"><br><br>
+                                        <input type="submit" name="submit" value="Submit" class="btn btn-info">
+                                   </form>
+                                </div>
+                        </div>
+                    </div>
+</body>
+</html>
